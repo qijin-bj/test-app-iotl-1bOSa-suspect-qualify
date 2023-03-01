@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-lbuw
+  namespace: build-e2e-jcgu-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:c2b5741cb323c8dd5c89c0999c1f30cda05e60322a5a3e9a641c3f7995d8862d
+        name: my-python
+        resources: {}
+status: {}
